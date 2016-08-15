@@ -1,0 +1,31 @@
+{
+  "name": "javascript-studies-es6",
+  "version": "0.0.0",
+  "description": "studies ",
+  "main": "index.js",
+  "scripts": {
+     "dev": "NODE_PATH=src babel-node src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suxxus-studies/javascript-studies-es6.git"
+  },
+  "keywords": [
+    "ecma6",
+    "javascript 2015",
+    "studies"
+  ],
+  "author": "suxxus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suxxus-studies/javascript-studies-es6/issues"
+  },
+  "homepage": "https://github.com/suxxus-studies/javascript-studies-es6#readme",
+  "devDependencies": {
+    "babel-cli": "6.11.4",
+    "babel-eslint": "6.1.2",
+    "babel-preset-es2015": "6.13.2",
+    "eslint": "3.3.0",
+    "eslint-cli": "1.1.0"
+  }
+}
