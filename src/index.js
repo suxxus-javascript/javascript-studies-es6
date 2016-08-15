@@ -1,1 +1,1 @@
-import 'arrays-and-destructuring-elements';
+import 'arrays-and-destructuring-arguments';
