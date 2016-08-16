@@ -15,3 +15,7 @@ console.log('description => ' + description([['Paul', 'Doe'], 'bon vivant']));
 const everithingButTheHead = ([first, ...rest]) =>
   `head: ${first} rest: ${rest}`;
 console.log('everithingButTheHead => ', everithingButTheHead(['A', 'B', 'C', 'D', 'F']));
+
+// destructuring parameters
+const foo = (...nums) => nums;
+console.log(`destructuring params => ${foo(1,2,3,4)}`);
