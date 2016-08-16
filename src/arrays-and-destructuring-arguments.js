@@ -3,13 +3,15 @@
 // in JavaScript, we can actually reverse the statement and place the template on
 // the left and a value on the right:
 
-const unwrap = value => {
-  const [
-    val1,
-    val2
-  ] = value;
+const unwrap = ([val1, val2]) => `value1: ${val1}, value2: ${val2}`;
+console.log('unwrap => ' + unwrap(['Peter', 'John', 'Lois']));
 
-  return `value1: ${val1}, value2: ${val2}`;
-};
+// destructuring can nest
+const description = ([[first, last], occupation]) =>
+  `name: ${first}, last: ${last}, occupation:  ${occupation}`;
+console.log('description => ' + description([['Paul', 'Doe'], 'bon vivant']));
 
-console.log('---> ' + unwrap(['Peter','John','Lois']) );
+// gathering
+const everithingButTheHead = ([first, ...rest]) =>
+  `head: ${first} rest: ${rest}`;
+console.log('everithingButTheHead => ', everithingButTheHead(['A', 'B', 'C', 'D', 'F']));
