@@ -4,7 +4,8 @@
   "description": "studies ",
   "main": "index.js",
   "scripts": {
-     "dev": "NODE_PATH=src babel-node src"
+    "dev": "NODE_PATH=src babel-node src",
+    "lint": "eslint --color  src || true"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "babel-eslint": "6.1.2",
     "babel-preset-es2015": "6.13.2",
     "eslint": "3.3.0",
-    "eslint-cli": "1.1.0"
+    "eslint-cli": "1.1.0",
+    "lint": "1.1.2"
   }
 }
