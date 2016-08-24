@@ -19,36 +19,28 @@ console.log(
 );
 
 var ln = function(value) {
-    var first = value.shift()
+    var first = value.shift();
     var rest = value;
-    return first === undefined ? 0 : 1 + ln(rest);
+    return !first ? 0 : 1 + ln(rest);
 };
-
 console.log(ln([1, 2, 3]));
 
 const len = ([first, ...rest]) => !first ? 0 : 1 + len(rest);
-
 console.log(len([4, 5, 6, 7]));
 
-var flatten0 = function(value) {
-    if (value.length === 0) {
-        return [];
-    }
+var flattenEmpty = function(value) {
+    return value.length === 0 ? [] : '';
 };
-
 console.log(
     'flattening an empty array will produce an empty array.',
-    flatten0([])
+    flattenEmpty([])
 );
 
-var flatten1 = function fl(value) {
+var elemIsNotArrayType = function fl(value) {
     var first = value.shift();
-    if (!Array.isArray(first)) {
-        return (value.slice(0));
-    }
+    return !Array.isArray(first) ? value.slice(0) : '';
 };
-
 console.log(
     'if an element isn’t an array, we don’t flatten it',
-    flatten1(['a', 'b'])
+    elemIsNotArrayType(['a', 'b'])
 );
