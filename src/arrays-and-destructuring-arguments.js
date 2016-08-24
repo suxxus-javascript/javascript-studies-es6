@@ -2,7 +2,6 @@
 
 // in JavaScript, we can actually reverse the statement and place the template on
 // the left and a value on the right:
-
 const unwrap = ([val1, val2]) => `value1: ${val1}, value2: ${val2}`;
 console.log('unwrap => ' + unwrap(['Peter', 'John', 'Lois']));
 
@@ -18,4 +17,4 @@ console.log('everithingButTheHead => ', everithingButTheHead(['A', 'B', 'C', 'D'
 
 // destructuring parameters
 const foo = (...nums) => nums;
-console.log(`destructuring params => ${foo(1,2,3,4)}`);
+console.log(`destructuring params => ${foo(1, 2, 3, 4)}`);
