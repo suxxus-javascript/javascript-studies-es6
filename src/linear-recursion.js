@@ -7,9 +7,9 @@
 //    When all small problems have been solved, compose the solutions into one big solution
 
 var arr = [];
-var arr1 = [...[1, 2, 3]]
-var arr2 = [1, ...[]]
-var arr3 = [1, ...[2, 3]]
+var arr1 = [...[1, 2, 3]];
+var arr2 = [1, ...[]];
+var arr3 = [1, ...[2, 3]];
 
 console.log(
     arr,
@@ -41,10 +41,10 @@ console.log(
     flatten0([])
 );
 
-var flatten1 = function fl (value) {
+var flatten1 = function fl(value) {
     var first = value.shift();
     if (!Array.isArray(first)) {
-      return (value.slice(0));
+        return (value.slice(0));
     }
 };
 
