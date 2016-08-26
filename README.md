@@ -14,8 +14,5 @@ npm run dev
 
 ```
 
-[arrays-and-destructuring-arguments](https://leanpub.com/javascriptallongesix/read#arraysanddestructuring)
-
-
 ## Books
 [JavaScript Allongé, author: Reg “raganwald” Braithwaite](https://leanpub.com/javascriptallongesix)
