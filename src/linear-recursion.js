@@ -25,6 +25,7 @@ console.log(
     value2
 );
 
+// array length
 var ln = function(value) {
     var first = value.shift();
     var rest = value;
@@ -32,9 +33,9 @@ var ln = function(value) {
 };
 console.log(ln([1, 2, 3]));
 
+// array length ES6
 const len = ([first, ...rest]) => !first ? 0 : 1 + len(rest);
 console.log(len([4, 5, 6, 7]));
-
 
 // --------------------------------------------
 var flattenEmpty = function(value) {
