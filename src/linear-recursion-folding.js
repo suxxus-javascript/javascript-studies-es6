@@ -46,7 +46,7 @@ var minVal = function(values) {
     };
 
     return foldWithEs6(doMin, values[0], values);
-}
+};
 
 console.log(
     'minVal --> ',
