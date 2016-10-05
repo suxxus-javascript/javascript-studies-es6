@@ -34,7 +34,7 @@ console.log(
 const length = ([first, ...rest]) =>
     !first ? 0 : 1 + length(rest);
 
- console.log(length([1, 2, 3, 4]));
+console.log(length([1, 2, 3, 4]));
 
 // converting non-tail-calls to tail-calls
 // The 1 + work is done before calling itself, and by the time
@@ -81,9 +81,9 @@ console.log(
 );
 
 const callLastEs6 = (fn, ...args) =>
-  (...remainingArgs) =>
+    (...remainingArgs) =>
     fn(...remainingArgs, ...args);
 
 console.log(
-  callLastEs6(lengthDelaysWork, 0)([1,3,6,6])
+    callLastEs6(lengthDelaysWork, 0)([1, 3, 6, 6])
 );
