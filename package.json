@@ -4,7 +4,7 @@
   "description": "studies ",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_PATH=src babel-node src",
+    "dev": "NODE_PATH=src babel-node ./src/destructuring-objects.js",
     "lint": "eslint --color  src || true"
   },
   "repository": {
