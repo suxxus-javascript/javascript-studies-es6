@@ -18,3 +18,6 @@ console.log('everithingButTheHead => ', everithingButTheHead(['A', 'B', 'C', 'D'
 // destructuring parameters
 const foo = (...nums) => nums;
 console.log(`destructuring params => ${foo(1, 2, 3, 4)}`);
+
+
+console.log( '======== END - arrays and destructuring arguments - =========\n' );

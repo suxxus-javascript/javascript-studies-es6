@@ -1,6 +1,6 @@
 var sumSquares = function(values) {
     var first = values.shift();
-    if (first === undefined) {
+    if (!first) {
         return 0;
     }
     return (first * first) + sumSquares(values);
@@ -11,7 +11,7 @@ console.log(
 );
 
 const sumSquaresEs6 = ([first, ...rest]) =>
-    first === undefined ? 0 : (first * first) + sumSquaresEs6(rest);
+    !first ? 0 : (first * first) + sumSquaresEs6(rest);
 
 console.log(
     'sumSquaresEs6: should return sum of squares',
@@ -20,7 +20,7 @@ console.log(
 
 var foldWith = function(fn, terminalVal, values) {
     var first = values.shift();
-    if (first === undefined) {
+    if (!first) {
         return terminalVal;
     }
     return fn(first, foldWith(fn, terminalVal, values));
@@ -33,7 +33,7 @@ console.log(
 );
 
 const foldWithEs6 = (fn, terminalVal, [first, ...rest]) =>
-    first === undefined ? terminalVal : fn(first, foldWithEs6(fn, terminalVal, rest));
+    !first ? terminalVal : fn(first, foldWithEs6(fn, terminalVal, rest));
 
 console.log('foldWithEs6 ---> ',
     foldWithEs6((first, rest) => (first * first) + rest, 0, [2, 3, 4])
@@ -52,3 +52,6 @@ console.log(
     'minVal --> ',
     minVal([2, 1, 4, 1])
 );
+
+
+console.log( '======== END - linear recursion and folding - =========\n' );

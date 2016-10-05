@@ -71,7 +71,7 @@ var callLast = function(fn) {
     return function() {
         var remainingArgs = [].slice.call(arguments);
         return fn(remainingArgs.shift(), args.shift());
-    }
+    };
 };
 
 var leng = callLast(lengthDelaysWork, 0);
