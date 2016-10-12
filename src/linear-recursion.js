@@ -122,3 +122,6 @@ console.log(
         ['a'], 'b', ['c']
     ])
 );
+
+console.log( '======== END - linear recursion - =========\n' );
+

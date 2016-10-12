@@ -27,7 +27,7 @@ const {
     }
 } = user;
 
-console.log('---> given', given);
+console.log('---> given', given, 'surname ', surname, ' tit ', tit);
 
 
 
@@ -40,7 +40,7 @@ const {
         title
     }
  } = user2;
-console.log('---> title', title);
+console.log('---> user2', first, ' ', last, ' ', title);
 
 
 console.log('======== END - destructuring objects - =========\n');
